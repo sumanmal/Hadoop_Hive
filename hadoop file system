@@ -14,3 +14,22 @@ hadoop fs -copyToLocal /tmp/test1.txt /
 hdfs dfs -ls /tmp
 pwd
 hadoop fs -copyToLocal /tmp/test1.txt /home/cloudera
+
+mkdir suman
+ls -ltr
+hdfs dfs -mkdir /suman
+hdfs dfs -ls /
+vi test2.txt
+ls -ltr
+mv test2.txt /home/cloudera/suman/
+ls -ltr
+cd suman
+ls -ltr
+chmod 777 *
+ls -al
+hadoop fs -put test2.txt /suman
+hdfs dfs -ls /suman
+hadoop fs -get /suman/test2.txt /home/cloudera/
+ls -ltr
+cd ../
+ls -ltr
