@@ -1,1 +1,10 @@
+hadoop fs -ls /
+hdfs dfs -ls /
+vi test1.txt
+ls -ltr
+hdfs dfs -ls /
+hadoop fs -copyFromLocal test1.txt /
+hdfs dfs -ls /
+hadoop fs -ls/tmp
+hadoop fs -ls /tmp
 
