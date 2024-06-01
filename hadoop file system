@@ -8,3 +8,9 @@ hdfs dfs -ls /
 hadoop fs -ls/tmp
 hadoop fs -ls /tmp
 
+hadoop fs -copyToLocal /tmp/test1.txt /
+hadoop fs -chmod 777 /tmp/test1.txt
+hadoop fs -copyToLocal /tmp/test1.txt /
+hdfs dfs -ls /tmp
+pwd
+hadoop fs -copyToLocal /tmp/test1.txt /home/cloudera
