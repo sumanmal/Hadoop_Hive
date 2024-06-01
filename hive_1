@@ -13,3 +13,5 @@ create table department_data
 describe department_data;
 
 describe formatted department_data;
+
+location -  hdfs://quickstart.cloudera:8020/user/hive/warehouse/suman_test_1.db/department_data
