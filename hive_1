@@ -15,3 +15,14 @@ describe department_data;
 describe formatted department_data;
 
 location -  hdfs://quickstart.cloudera:8020/user/hive/warehouse/suman_test_1.db/department_data
+
+describe formatted department_data_from_hdfs;
+
+# For data load from local
+load data local inpath 'file:///home/cloudera/test/department_data.csv' into table department_data; 
+
+# Display column name
+set hive.cli.print.header = true;
+
+# Load data from hdfs location
+load data inpath '/suman/' into table department_data_from_hdfs;
