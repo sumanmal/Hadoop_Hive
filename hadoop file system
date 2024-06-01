@@ -45,4 +45,36 @@ hdfs dfs -stat /suman
 ---> 2024-06-01 14:36:39
 
 --------------------------------------------------------------------------------------------------------
+/* Health of the hdfs*/
+[cloudera@quickstart ~]$ hadoop fsck /
+DEPRECATED: Use of this script to execute hdfs command is deprecated.
+Instead use the hdfs command for it.
 
+Connecting to namenode via http://quickstart.cloudera:50070/fsck?ugi=cloudera&path=%2F
+FSCK started by cloudera (auth:SIMPLE) from /10.0.2.15 for path / at Sat Jun 01 07:50:47 PDT 2024
+....................................................................................................
+....................................................................................................
+....................................................................................................
+....................................................................................................
+....................................................................................................
+....................................................................................................
+....................................................................................................
+....................................................................................................
+....................................................................................................
+.................................Status: HEALTHY
+ Total size:    861287764 B (Total open files size: 166 B)
+ Total dirs:    95
+ Total files:   933
+ Total symlinks:                0 (Files currently being written: 3)
+ Total blocks (validated):      931 (avg. block size 925121 B) (Total open file blocks (not validated): 2)
+ Minimally replicated blocks:   931 (100.0 %)
+ Over-replicated blocks:        0 (0.0 %)
+ Under-replicated blocks:       0 (0.0 %)
+ Mis-replicated blocks:         0 (0.0 %)
+ Default replication factor:    1
+ Average block replication:     1.0
+ Corrupt blocks:                0
+ Missing replicas:              0 (0.0 %)
+ Number of data-nodes:          1
+ Number of racks:               1
+FSCK ended at Sat Jun 01 07:50:47 PDT 2024 in 195 milliseconds
