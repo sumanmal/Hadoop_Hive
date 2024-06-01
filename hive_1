@@ -1,1 +1,15 @@
+create database suman_test_1;
+use suman_test_1;
 
+create table department_data                                                                                                            
+    > (                                                                                                                                       
+    > dept_id int,                                                                                                                            
+    > dept_name string,                                                                                                                       
+    > manager_id int,                                                                                                                         
+    > salary int)                                                                                                                             
+    > row format delimited                                                                                                                    
+    > fields terminated by ','; 
+    
+describe department_data;
+
+describe formatted department_data;
